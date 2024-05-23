@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/favicon-32x32.png" />
+    <title>Redouane || Portofolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("sZ3OsHFif8e-Fv1Ir"); // Replace with your EmailJS user ID
+        })();
+
+        function sendEmail() {
+            const form = document.getElementById('contact-form');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                emailjs.sendForm('redouane_123', 'redouane_email', this)
+                    .then(function(response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                        alert("Message sent successfully!");
+                        form.reset();
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                        alert("Failed to send message.");
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <!-- header site -->
+    <header>
+        <div class="logo"><span>Red</span>ouane. </div>
+        <ul class="navlist">
+            <li><a href="#home" style="--i:1;">Accueil</a></li>
+            <li><a href="#about"  style="--i:2;">À propos</a></li>
+            <li><a href="#services"  style="--i:3;">Sevices</a></li>
+            <li><a href="#skills"  style="--i:4;">Compétences</a></li>
+            <li><a href="#portofolio"  style="--i:5;">Portofolio</a></li>
+            <li><a href="#contact"  style="--i:6;">Contact</a></li>
+        </ul>
+        <div id="menu-icon" class="bx bx-menu"></div>
+    </header>
+
+    <!-- home section -->
+    <section id="home" class="home">
+        <div class="home-content scroll-scale">
+             <h1> ELHAMITI Redouane</h1>
+            <div class="change-text">
+                <h3>Je suis</h3>
+                <h3>
+                    <!-- &nbsp; permet de mettre de l'espace entre les mots -->
+                    <span class="word">Développeur&nbsp;Web &nbsp;Full&nbsp;stack</span>
+                    <span class="word">Développeur&nbsp;UI/UX</span>
+                    <span class="word">Web&nbsp;Designer</span>
+                </h3>
+            </div>
+            <p>Je conçois des sites Web, incluant la création, le design graphique, et d'autres aspects.</p>
+
+                <div class="info-box">
+                    <div class="email-info">
+                        <h5>Email :</h5>
+                        <span><a href="mailto:Redouane.elhamiti12@gmail.com">Redouane.elhamiti12@gmail.com</a></span>
+                    </div>
+                    <div class="behance-info">
+                        <h5>Freelance :</h5>
+                        <span>Disponible</span>
+                    </div>
+                </div>
+
+                <div class="btn-box">
+                    <button onclick="downloadCV()" class="btn">Télécharger CV</button>
+                    <a href="#contact" class="btn">Contactez-moi</a>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/redouane-elhamiti/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/redouane_elh/"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://github.com/Redouane-12"><i class='bx bxl-github'></i></a>
+                </div>
+        </div>
+
+        
+
+        <div class="home-image scroll-scale">
+            <div class="img-box">
+                <img src="img/me2.png" alt="">
+            </div>
+
+                <div class="liquid-shape">
+                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                        <path fill="#ff5912">
+                            <animate attributeName="d"
+                                dur="20000ms"
+                                repeatCount="indefinite"
+                                values="
+                                M412.5,289Q385,328,373.5,386Q362,444,306,469Q250,494,207,446Q164,398,109.5,380.5Q55,363,38,306.5Q21,250,59.5,206Q98,162,118.5,110Q139,58,194.5,62.5Q250,67,306,62Q362,57,397,101Q432,145,436,197.5Q440,250,412.5,289Z;
+
+                                M402.5,290Q388,330,372.5,382.5Q357,435,303.5,420.5Q250,406,191.5,429.5Q133,453,109.5,399Q86,345,50.5,297.5Q15,250,51,203Q87,156,126.5,130Q166,104,208,84Q250,64,308.5,55.5Q367,47,403.5,93.5Q440,140,428.5,195Q417,250,402.5,290Z;
+
+                                M451,303Q434,356,394,393Q354,430,302,430.5Q250,431,209.5,410Q169,389,125,368.5Q81,348,44.5,299Q8,250,48.5,203.5Q89,157,116,111Q143,65,196.5,63Q250,61,310.5,51Q371,41,408.5,89Q446,137,457,193.5Q468,250,451,303Z;
+
+                                M426.5,301Q426,352,379.5,373Q333,394,291.5,399Q250,404,193,426Q136,448,109,397.5Q82,347,83.5,298.5Q85,250,94,207.5Q103,165,121.5,112.5Q140,60,195,61.5Q250,63,292.5,83Q335,103,379.5,126Q424,149,425.5,199.5Q427,250,426.5,301Z;
+
+                                M446.5,293.5Q402,337,374.5,377Q347,417,298.5,420Q250,423,196.5,429.5Q143,436,110,393Q77,350,81,300Q85,250,67,192Q49,134,97,101Q145,68,197.5,45Q250,22,306.5,38.5Q363,55,379.5,110.5Q396,166,443.5,208Q491,250,446.5,293.5Z;
+
+                                M434,293Q398,336,384.5,398Q371,460,310.5,463Q250,466,192,458Q134,450,89.5,409Q45,368,23.5,309Q2,250,22,190Q42,130,90,93.5Q138,57,194,41.5Q250,26,303,46Q356,66,383,111.5Q410,157,440,203.5Q470,250,434,293Z;
+
+                                M412.5,289Q385,328,373.5,386Q362,444,306,469Q250,494,207,446Q164,398,109.5,380.5Q55,363,38,306.5Q21,250,59.5,206Q98,162,118.5,110Q139,58,194.5,62.5Q250,67,306,62Q362,57,397,101Q432,145,436,197.5Q440,250,412.5,289Z;
+                                "
+                            ></animate>
+                        </path>
+                      </svg>  
+                </div>
+         
+                <!-- <div class="liquid-shape">
+                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                        <path fill="#ff5912">
+                            <animate attributeName="d"
+                                dur="20000ms"
+                                repeatCount="indefinite"
+                                values="
+                                M412.5,289Q385,328,373.5,386Q362,444,306,469Q250,494,207,446Q164,398,109.5,380.5Q55,363,38,306.5Q21,250,59.5,206Q98,162,118.5,110Q139,58,194.5,62.5Q250,67,306,62Q362,57,397,101Q432,145,436,197.5Q440,250,412.5,289Z;
+
+                                M402.5,290Q388,330,372.5,382.5Q357,435,303.5,420.5Q250,406,191.5,429.5Q133,453,109.5,399Q86,345,50.5,297.5Q15,250,51,203Q87,156,126.5,130Q166,104,208,84Q250,64,308.5,55.5Q367,47,403.5,93.5Q440,140,428.5,195Q417,250,402.5,290Z;
+
+                                M451,303Q434,356,394,393Q354,430,302,430.5Q250,431,209.5,410Q169,389,125,368.5Q81,348,44.5,299Q8,250,48.5,203.5Q89,157,116,111Q143,65,196.5,63Q250,61,310.5,51Q371,41,408.5,89Q446,137,457,193.5Q468,250,451,303Z;
+
+                                M426.5,301Q426,352,379.5,373Q333,394,291.5,399Q250,404,193,426Q136,448,109,397.5Q82,347,83.5,298.5Q85,250,94,207.5Q103,165,121.5,112.5Q140,60,195,61.5Q250,63,292.5,83Q335,103,379.5,126Q424,149,425.5,199.5Q427,250,426.5,301Z;
+
+                                M446.5,293.5Q402,337,374.5,377Q347,417,298.5,420Q250,423,196.5,429.5Q143,436,110,393Q77,350,81,300Q85,250,67,192Q49,134,97,101Q145,68,197.5,45Q250,22,306.5,38.5Q363,55,379.5,110.5Q396,166,443.5,208Q491,250,446.5,293.5Z;
+
+                                M434,293Q398,336,384.5,398Q371,460,310.5,463Q250,466,192,458Q134,450,89.5,409Q45,368,23.5,309Q2,250,22,190Q42,130,90,93.5Q138,57,194,41.5Q250,26,303,46Q356,66,383,111.5Q410,157,440,203.5Q470,250,434,293Z;
+
+                                M412.5,289Q385,328,373.5,386Q362,444,306,469Q250,494,207,446Q164,398,109.5,380.5Q55,363,38,306.5Q21,250,59.5,206Q98,162,118.5,110Q139,58,194.5,62.5Q250,67,306,62Q362,57,397,101Q432,145,436,197.5Q440,250,412.5,289Z;
+                                "
+                            ></animate>
+                        </path>
+                      </svg>  
+                </div> -->
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="about scroll-scale">
+        <div class="img-about">
+            <img src="img/me3.png" alt="">
+            <div class="info-about1">
+                <span>1</span>
+                <p>An d'expérience</p>
+            </div>
+            <div class="info-about2">
+                <span>+5</span>
+                <p>Projets réalisés</p>
+            </div>
+            <div class="info-about3">
+                <span>+3</span>
+                <p>Clients satisfaits</p>
+            </div>
+        </div>
+        
+        <div class="about-content">
+            <h2>A-propos de moi</h2><br>
+            <span>Permettez-moi de me présenter</span>
+            <p>Je suis un développeur web Full stack passionné par l'art de créer des expériences numériques 
+                exceptionnelles. Je transforme les idées en 
+                réalité technologique, alliant créativité et expertise technique pour offrir des 
+                solutions innovantes.
+            </p>
+
+            <div class="btn-box">
+                <a href="#services" class="btn">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section -->
+    <section id="services" class="services scroll-bottom">
+        <div class="main-text scroll-scale">
+            <span>Ce que je vais faire pour vous</span>
+            <h2>Mes Services</h2>
+        </div>
+
+        <div class="section-services">
+            <div class="service-box">
+                <i class='bx bx-code-alt service-icon' ></i>
+                <h3>Développement Web sur Mesure pour Votre Projet</h3>
+                <p>
+                    Je crée des sites web entièrement personnalisés pour répondre aux besoins spécifiques de votre entreprise. 
+                    Des fonctionnalités uniques et une conception responsive garantissent une expérience utilisateur exceptionnelle
+                </p>
+                <!-- <div class="btn-box service-btn">
+                    <a href="#" class="btn">En savoir plus</a>
+                </div> -->
+            </div>
+
+            <div class="service-box">
+                <i class='bx bxs-layer service-icon'></i>
+                <h3>Conception d'Interfaces Utilisateur (UI) et d'Expériences Utilisateur (UX)</h3>
+                <p>
+                    Je développe des interfaces conviviales et esthétiques, mettant l'accent 
+                    sur la satisfaction de l'utilisateur, la navigation intuitive et la beauté visuelle.
+                </p>
+                <!-- <div class="btn-box service-btn">
+                    <a href="#" class="btn">En savoir plus</a>
+                </div> -->
+            </div>
+
+            <div class="service-box">
+                <i class='bx bx-desktop service-icon'></i>
+                <h3>SEO & Référencement Naturel</h3>
+                <p>
+                    Pour augmenter la visibilité de votre site web, je propose des services d'optimisation SEO. 
+                    Cela inclut l'amélioration du classement dans les moteurs de recherche, la recherche de mots-clés 
+                    pertinents et l'optimisation du contenu pour attirer un trafic organique de qualité.
+                </p>
+                <!-- <div class="btn-box service-btn">
+                    <a href="#" class="btn">En savoir plus</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- skill section -->
+    <section id="skills" class="skills">
+        <div class="main-text">
+            <!-- <span>Technique et professionnel</span> -->
+            <h2>Mes Compétences</h2>
+        </div>
+
+        <div class="skill-main scroll-scale">
+            <div class="skill-left">
+                <div class="professional">
+                    <div class="box">
+                        <!-- <div class="circle" data-dots="50" data-percent="100"></div> -->
+                        <div class="text">
+                            <img src="./img/html.png" alt="">
+                            <small>Html</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <!-- <div class="circle" data-dots="50" data-percent="100"></div> -->
+                        <div class="text">
+                            <img src="./img/css.png" alt="">
+                            <small>Css</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <!-- <div class="circle" data-dots="50" data-percent="100"></div> -->
+                        <div class="text">
+                            <img src="./img/js.png" alt="">
+                            <small>Javascript</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <!-- <div class="circle" data-dots="50" data-percent="100"></div> -->
+                        <div class="text">
+                            <img src="./img/mysql.png" alt="">
+                            <small>Sql</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-right  scroll-scale">
+                <!-- <h3>Compétences </h3> -->
+                <div class="professional">
+                    <div class="box">
+                        <!-- <div class="circle" data-dots="50" data-percent="100"></div> -->
+                        <div class="text">
+                            <img src="./img/MONGODB2.png" alt="">
+                            <small>MongoDb</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <!-- <div class="circle" data-dots="50" data-percent="100"></div> -->
+                        <div class="text">
+                            <img src="./img/express.png" alt="">
+                            <small>ExpressJs</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <!-- <div class="circle" data-dots="50" data-percent="100"></div> -->
+                        
+                        <div class="text">
+                            <img src="./img/react.png" alt="">
+                            <small>ReactJs</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <!-- <div class="circle" data-dots="50" data-percent="100"></div> -->
+                        <div class="text">
+                            <img src="./img/Node_js.png" alt="">
+                            <small>NodeJs</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- portofolio section -->
+    <section id="portofolio" class="portofolio">
+        <div class="main-text  scroll-scale">
+            <h2>Mes projets récents</h2>
+            <span>Que vais-je faire pour vous ?</span>
+        </div>
+
+        <div class="container">
+            <div class="fillter-buttons">
+                <button class="button" data-filter= "all">Projet</button>
+                <!-- <button class="button" data-filter=".product">Produit</button>
+                <button class="button" data-filter=".inter">Interaction</button>
+                <button class="button" data-filter=".web">Application Web</button> -->
+            </div>
+        </div>
+
+        <div class="portfolio-gallery  scroll-bottom">
+            <!-- <div class="port-box mix product">
+                <div class="port-image">
+                    <img src="img/img1.png" alt="">
+                </div>
+                <div class="port-content">
+                    <h3> Site Web de Portfolio</h3>
+                    <p>Développement d'un site web de portfolio professionnel pour présenter vos compétences, vos projets et votre parcours.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="port-box mix product">
+                <div class="port-image">
+                    <img src="img/img2.jpg" alt="">
+                </div>
+                <div class="port-content">
+                    <h3>Site Web de Restaurant</h3>
+                    <p>Création d'un site web convivial pour un restaurant, mettant en avant le menu, les réservations en ligne et l'ambiance délicieuse du lieu</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="port-box mix inter">
+                <div class="port-image">
+                    <img src="img/img3.jpg" alt="">
+                </div>
+                <div class="port-content">
+                    <h3>E-commerce</h3>
+                    <p> Conception et développement d'un site de commerce électronique élégant et convivial pour une expérience d'achat en ligne fluide</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div> -->
+
+            <div class="port-box mix inter">
+                <div class="port-image">
+                    <img src="img/GLPF.png" alt="">
+                </div>
+                <div class="port-content">
+                    <h3>Green Land</h3>
+                    <p>Ecommerce web App.</p>
+                    <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
+                </div>
+            </div>
+
+            <div class="port-box mix inter">
+                <div class="port-image">
+                    <img src="img/img5.jpg" alt="">
+                </div>
+                <div class="port-content">
+                    <h3>Tutoligne</h3>
+                    <p>Plateforme de Tutoriels en Ligne.</p>
+                    <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
+                </div>
+            </div>
+
+            <div class="port-box mix web">
+                <div class="port-image">
+                    <img src="img/blog.png" alt="">
+                </div>
+                <div class="port-content">
+                    <h3>Blog App</h3>
+                    <p>Application web de blog enligne</p>
+                    <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="contact">
+        <div class="main-text scroll-scale">
+            <span>Posez-moi une question</span>
+            <h2>Contactez-moi</h2>
+        </div>
+
+        <form id="contact-form" class="scroll-bottom">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre e-mail" required>
+            <input type="text" name="address" placeholder="Votre adresse" required>
+            <input type="text" name="phone" placeholder="Numéro de téléphone" required>
+            <textarea name="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
+            <div class="btn-box formBtn">
+                <button type="submit" class="btn" onclick="sendEmail()">Envoyer un message</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- footer website -->
+    <footer>
+        <p class="scroll-scale">Droit d'auteur &copy; 2024 par ELHAMITI Redouane || Tous droits réservés.</p>
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </footer>
+    <script>
+        function downloadCV() {
+            const link = document.createElement('a');
+            link.href = 'CV-ELHAMITI-Redouane.pdf';
+            link.download = 'CV-ELHAMITI-Redouane.pdf'; // The name for the downloaded file
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+    <script src="script.js"></script>
+    <script src="mixitup.min.js"></script>
+</body>
+</html>
